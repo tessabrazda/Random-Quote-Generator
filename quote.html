@@ -1,0 +1,82 @@
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Random Quote Generator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="quote.css" rel="stylesheet">
+    <script src="quote.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Random Quote Generator</h3>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <br>
+    <div class="container-fluid p-3 my-3 bg-light text-dark border-navy">
+      <h1 id="newQuote">
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+      </h1>
+      <p class="font-weight-light" id="newAuthor"></p>
+    </div>
+    <br>
+    <p class="lead">
+      <label for="newLength">How long would you like the new quote?</label>
+                <select id="newLength">
+                  <option value=50>Short</option>
+                  <option value=150>Medium</option>
+                  <option value=250>Long</option>
+                </select><br>
+      <label for="newTag">Any themes you would like the quote to focus on?</label>
+                <select id="newTag">
+                  <option value="">None</option>
+                  <option value="famous-quotes">famous quotes</option>
+                  <option value="life">life</option>
+                  <option value="love">love</option>
+                  <option value="inspirational">inspirational</option>
+                  <option value="business">business</option>
+                  <option value="history">history</option>
+                  <option value="politics">politics</option>
+                  <option value="friendship">friendship</option>
+                  <option value="wisdom">wisdom</option>
+                  <option value="happiness">happiness</option>
+                  <option value="proverb">proverb</option>
+                  <option value="faith">faith</option>
+                  <option value="future">future</option>
+                  <option value="nature">nature</option>
+                  <option value="religion">religion</option>
+                  <option value="technology">technology</option>
+                  <option value="success">success</option>
+                  <option value="science">science</option>
+                  <option value="education">education</option>
+                </select><br><br>
+      <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" onclick="randomQuote()">Get Quote</button>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
